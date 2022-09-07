@@ -1,0 +1,253 @@
+body {
+    background: #FAFAFA;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+main div {
+    display: inline-block;
+}
+
+/* .contenedor-izq {
+    width: 724px;
+    height: 480px;
+    border-radius: 36px;
+    border: 1px solid #DDDAC6;
+    margin: 60px 0 0 130px;
+    background: #F6F5EF;
+} */
+
+.contenedor-izq {
+    width: 724px;
+    height: 480px;
+    border-radius: 36px;
+    border: 1px solid #DDDAC6;
+    margin: 0;
+    background: #F6F5EF;
+    box-sizing: border-box;
+}
+
+.input-texto {
+    position: absolute;
+    width: 524px;
+    margin: 50px 0 0 100px;
+    font-size: 18px;
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    border-style: none;
+    resize: none;
+    outline: none;
+    background: #F6F5EF;
+    scrollbar-color: #DDDAC6 #e0e0e0;
+    scrollbar-width: thin;
+}
+
+.input-texto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.input-texto::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+.input-texto::-webkit-scrollbar-thumb {
+    background-color: #DDDAC6;
+}
+
+.contenedor-izq p {
+    display: inline-block;
+    position: absolute;
+    margin: 395px 0 0 155px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.contenedor-izq button {
+    position: absolute;
+    margin-top: 420px;
+}
+
+.b-encriptar {
+    width: 200px;
+    padding: 10px;
+    margin-left: 140px;
+    border-radius: 24px;
+    background: #A9CEB6;
+    border: 1px solid #7DA49E;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.b-encriptar:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #A6A6A6;
+    transition: 1s transform;
+}
+
+.b-encriptar:active {
+    background: #9abaa5;
+}
+
+.b-desencriptar {
+    width: 200px;
+    padding: 10px;
+    margin-left: 390px;
+    border-radius: 24px;
+    background: #DDDAC6;
+    border: 1px solid #B9AB9C;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.b-desencriptar:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #A6A6A6;
+    transition: 1s transform;
+}
+
+.b-desencriptar:active {
+    background: #d0cdbb;
+}
+
+.contenedor-der {
+    width: 300px;
+    height: 480px;
+    border-radius: 36px;
+    margin: 0 0 0 75px;
+}
+
+.contenedor-texto {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    margin: 50px 0 0 0;
+}
+
+.output-texto {
+    display: none;
+    position: relative;
+    width: 200px;
+    margin: 0 0 0 50px;
+    border-style: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    background: none;
+    color: #737373;    
+    scrollbar-color: #A9CEB6 #cbddd2;
+    scrollbar-width: thin;
+}
+
+.output-texto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.output-texto::-webkit-scrollbar-track {
+    background-color: #cbddd2;
+}
+
+.output-texto::-webkit-scrollbar-thumb {
+    background-color: #A9CEB6;
+}
+
+.texto1-contder {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    color: #545454;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 75px 50px 0 50px;
+}
+
+.texto2-contder {
+    width: 200px;
+    margin: 170px 0 0 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #737373;
+}
+
+.opacidad-imagen {
+    position: absolute;
+    width: 300px;
+    height: 480px;
+    border-radius: 36px;
+    background: #ffffff;
+    opacity: 0.5;
+}
+
+.b-copiar {
+    position: absolute;
+    margin: 420px 0 0 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 24px;
+    background: #576F6B;
+    border: 1px solid #4A605C;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    opacity: 0.88;
+    cursor: pointer;
+}
+
+.b-copiar:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #A6A6A6;
+    transition: 1s transform;
+}
+
+.b-copiar:active {
+    background: #4A605C;
+}
+
+.imagen {
+    width: 300px;
+    height: 480px;
+    border-radius: 36px;
+    box-shadow: 10px 10px 20px lightgrey;
+}
+
+footer p {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer {
+    height: 10vh;
+}
+
+footer p:nth-child(1) {
+    color: #A6A6A6;
+    margin-left: 38%;
+}
+
+.corazon {
+    display: inline-block;
+    width: 12px;
+}
+
+footer p:nth-child(3) {
+    color: #A6A6A6;
+}
+
+footer p:nth-child(4) {
+    color: #B9AB9C;
+}
