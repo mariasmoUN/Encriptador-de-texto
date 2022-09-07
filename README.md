@@ -1,0 +1,1 @@
+# Encrptador-de-texto
