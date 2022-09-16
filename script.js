@@ -17,10 +17,24 @@ function encriptar() {
     var txt_cifrado = txt_cifrado.replace(/u/gm, "ufat");
 
     if (/[^a-zñ ]/.test(texto)) {
-        alert("Solo se permiten letras minusculas y sin acento")
+        Swal.fire({
+            icon: 'error',
+            iconColor: '#b9ab9c',
+            background: '#E3E0DE',
+            title: 'Oops...',
+            confirmButtonColor: '#b9ab9c',
+            text: 'Solo se permiten letras minusculas y sin acento',
+          });
     }
     else if (texto.length === 0) {
-        alert("El campo de texto esta vacio, escriba una palabra")
+        Swal.fire({
+            icon: 'error',
+            iconColor: '#b9ab9c',
+            background: '#E3E0DE',
+            title: 'Oops...',
+            confirmButtonColor: '#b9ab9c',
+            text: 'El campo de texto está vacio, escriba una palabra',
+          });
     }
     else {
         document.getElementById("texto1-contder").style.display = "none";
