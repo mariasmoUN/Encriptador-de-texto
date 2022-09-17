@@ -54,12 +54,25 @@ function desencriptar() {
     var txt_cifrado = txt_cifrado.replace(/ai/gm, "a");
     var txt_cifrado = txt_cifrado.replace(/ufat/gm, "u");
 
+    if (texto.length === 0) {
+        Swal.fire({
+            icon: 'error',
+            iconColor: '#b9ab9c',
+            background: '#E3E0DE',
+            title: 'Oops...',
+            confirmButtonColor: '#b9ab9c',
+            text: 'El campo de texto está vacio, escriba el texto que desea desencriptar',
+        });
+    }
+
+    else {
     document.getElementById("texto1-contder").style.display = "none";
     document.getElementById("texto2-contder").style.display = "none";
     document.getElementById("output-texto").style.display = "inline-block";
     document.getElementById("output-texto").innerHTML = txt_cifrado;
 
-    value();
+    value();    
+    }
 }
 
 function copiar() {
@@ -70,12 +83,10 @@ function copiar() {
         icon: 'success',
         iconColor: '#b9ab9c',
         background: '#E3E0DE',
-        title: 'Bien!',
+        title: '¡Bien!',
         confirmButtonColor: '#b9ab9c',
         text: 'Texto copiado correctamente',
-      });
-
-    focus();
+    });
 }
 
 focus();
