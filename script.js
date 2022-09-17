@@ -33,7 +33,7 @@ function encriptar() {
             background: '#E3E0DE',
             title: 'Oops...',
             confirmButtonColor: '#b9ab9c',
-            text: 'El campo de texto está vacio, escriba una palabra',
+            text: 'El campo de texto está vacio, escriba el texto que desea encriptar',
           });
     }
     else {
@@ -66,7 +66,14 @@ function copiar() {
     var contenido = document.querySelector("#output-texto");
     contenido.select();
     document.execCommand("copy");
-    alert("Texto copiado");
+    Swal.fire({
+        icon: 'success',
+        iconColor: '#b9ab9c',
+        background: '#E3E0DE',
+        title: 'Bien!',
+        confirmButtonColor: '#b9ab9c',
+        text: 'Texto copiado correctamente',
+      });
 
     focus();
 }
