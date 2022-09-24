@@ -1,20 +1,20 @@
 function focus() {
-    var input = document.getElementById("input-texto");
+    let input = document.getElementById("input-texto");
     input.focus();
 }
 
 function value() {
-    var input = document.getElementById("input-texto");
+    let input = document.getElementById("input-texto");
     input.value = "";
 }
 
 function encriptar() {
-    var texto = document.getElementById("input-texto").value;
-    var txt_cifrado = texto.replace(/e/gm, "enter");
-    var txt_cifrado = txt_cifrado.replace(/o/gm, "ober");
-    var txt_cifrado = txt_cifrado.replace(/i/gm, "imes");
-    var txt_cifrado = txt_cifrado.replace(/a/gm, "ai");
-    var txt_cifrado = txt_cifrado.replace(/u/gm, "ufat");
+    let texto = document.getElementById("input-texto").value;
+    let txt_cifrado = texto.replace(/e/gm, "enter");
+    txt_cifrado = txt_cifrado.replace(/o/gm, "ober");
+    txt_cifrado = txt_cifrado.replace(/i/gm, "imes");
+    txt_cifrado = txt_cifrado.replace(/a/gm, "ai");
+    txt_cifrado = txt_cifrado.replace(/u/gm, "ufat");
 
     if (/[^a-zñ ]/.test(texto)) {
         Swal.fire({
@@ -47,12 +47,12 @@ function encriptar() {
 }
 
 function desencriptar() {
-    var texto = document.getElementById("input-texto").value;
-    var txt_cifrado = texto.replace(/enter/gm, "e");
-    var txt_cifrado = txt_cifrado.replace(/ober/gm, "o");
-    var txt_cifrado = txt_cifrado.replace(/imes/gm, "i");
-    var txt_cifrado = txt_cifrado.replace(/ai/gm, "a");
-    var txt_cifrado = txt_cifrado.replace(/ufat/gm, "u");
+    let texto = document.getElementById("input-texto").value;
+    let txt_cifrado = texto.replace(/enter/gm, "e");
+    txt_cifrado = txt_cifrado.replace(/ober/gm, "o");
+    txt_cifrado = txt_cifrado.replace(/imes/gm, "i");
+    txt_cifrado = txt_cifrado.replace(/ai/gm, "a");
+    txt_cifrado = txt_cifrado.replace(/ufat/gm, "u");
 
     if (texto.length === 0) {
         Swal.fire({
@@ -76,7 +76,7 @@ function desencriptar() {
 }
 
 function copiar() {
-    var contenido = document.querySelector("#output-texto");
+    let contenido = document.querySelector("#output-texto");
     contenido.select();
     document.execCommand("copy");
     Swal.fire({
