@@ -220,10 +220,6 @@ main {
 */
 .imagen {
     display: none;
-/*     width: 300px;
-    height: 480px;
-    border-radius: 36px;
-    box-shadow: 10px 10px 20px lightgrey; */
 }
 
 footer {
@@ -256,11 +252,12 @@ footer span:nth-child(4) {
 } 
 
 .icon_linkedin {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .4rem;
 }
 
 .icon_github {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
 }

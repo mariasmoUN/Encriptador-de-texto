@@ -29,9 +29,10 @@ main {
 }
 
 .contenedor-der {
-    display: none;
+    height: 26rem;
+    box-shadow: 0 4px 4px lightgrey;
 }
 
 footer {
-    display: none;
+    margin-bottom: 2rem;
 }
