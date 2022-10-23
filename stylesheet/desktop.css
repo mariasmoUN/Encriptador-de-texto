@@ -1,0 +1,49 @@
+main {
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+.contenedor-izq {
+    width: 70rem;
+    height: 80%;
+    margin-right: 5rem;
+}
+
+.input-texto {
+    width: 80%;
+    height: 70%;
+    font-size: 2rem;
+    margin-top: 3.5rem;
+}
+
+.container-btns {
+    position: absolute;
+    width: 105rem;
+    margin-top: 33rem;
+}
+
+.b-encriptar {
+    margin: 0 6rem;
+}
+
+.b-desencriptar {
+    margin-right: 13rem;
+}
+
+.b-copiar {
+    margin-right: 2rem;
+}
+
+.contenedor-der {
+    width: 30rem;   
+    height: 80%;
+    margin-top: 0;
+    box-shadow: 3px 3px 10px lightgrey;
+}
+
+footer {
+    margin: 1rem 0 0 0;
+}
