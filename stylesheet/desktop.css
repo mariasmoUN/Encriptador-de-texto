@@ -54,6 +54,20 @@ main {
     padding: 0 2rem;
 }
 
+.contenedor-texto {
+    justify-content: flex-start;
+}
+
+.contenedor-texto p:nth-child(2) {
+    margin-top: 70%;
+}
+
+.output-texto {
+    width: 90%;
+    height: 65%;
+    margin-top: 15%;
+}
+
 footer {
     margin: 1rem 0 0 0;
 }
