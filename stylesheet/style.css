@@ -208,19 +208,6 @@ main {
     color: #737373;
     text-align: center;
 }
-/*
-.opacidad-imagen {
-    position: absolute;
-    width: 300px;
-    height: 480px;
-    border-radius: 36px;
-    background: #ffffff;
-    opacity: 0.5; 
-}
-*/
-.imagen {
-    display: none;
-}
 
 footer {
     display: flex;
