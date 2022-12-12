@@ -36,7 +36,8 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 
 **Visualiación:**  
   
-![encriptador](https://user-images.githubusercontent.com/110046283/190529718-200d203b-3cb9-430c-aa8d-441c3002b03d.png)
+![Encriptador](https://user-images.githubusercontent.com/110046283/206954224-6e8a1ce4-32eb-4cf1-bee0-696572c32584.png)
+
 
 ---
 
